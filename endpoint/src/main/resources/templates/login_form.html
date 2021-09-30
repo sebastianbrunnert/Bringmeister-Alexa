@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Anmelden</h1>
+<p>Bitte gebe deine Bringmeister Anmeldedaten an. Diese werden nur an Bringmeister selbst übermittelt und nirgends gespeichert.</p>
+<p style="color: red" th:if="${alert != null}" th:text="${alert}"></p>
+<form action="#" th:action="@{/account/login(state=${state},redirect_uri=${redirectUri})}" th:object="${user}" method="post">
+    <p>Benutzername: <input required type="text" th:field="*{name}" /></p>
+    <p>Passwort: <input required type="password" th:field="*{password}" /></p>
+    <p><input type="submit" value="Anmelden" />
+</form>
+</body>
+</html>

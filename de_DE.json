@@ -1,0 +1,180 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bring meister",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "hilfe",
+                        "ich brauche hilfe",
+                        "wie geht das",
+                        "was"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "schließe",
+                        "auf wiedersehen"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddCartItemIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "{query} hinzu zu fügen",
+                        "{query}",
+                        "Füge {query} in meinen Warenkorb ein",
+                        "Lege {query} in meinen Warenkorb",
+                        "Füge {query} in meinen Warenkorb",
+                        "Ich brauche {query}",
+                        "Füge {query} in den Warenkorb ein",
+                        "Füge {query} in den Warenkorb",
+                        "Lege {query} in den Warenkorb"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "No",
+                        "Nope",
+                        "Ne",
+                        "Nein Danke",
+                        "Nein"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "Jop",
+                        "Yes",
+                        "Gerne",
+                        "Genau",
+                        "Ja gerne",
+                        "Ja bitte",
+                        "Jap",
+                        "Ja"
+                    ]
+                },
+                {
+                    "name": "CartIntent",
+                    "slots": [],
+                    "samples": [
+                        "wieviel habe ich",
+                        "wieviel",
+                        "preis",
+                        "was habe ich im warenkorb",
+                        "was habe ich gekauft",
+                        "was kaufe ich",
+                        "was ist in meinem warenkorb",
+                        "warenkorb",
+                        "was ist im warenkorb"
+                    ]
+                },
+                {
+                    "name": "RemoveCartItemIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "{query} zu entfernen",
+                        "Nehm {query} raus",
+                        "{query} rausnehmen",
+                        "{query} entfernen",
+                        "Ich brauche {query} nicht mehr",
+                        "Entferne {query} aus meinem Warenkorb",
+                        "Entferne {query}"
+                    ]
+                },
+                {
+                    "name": "TimeSlotIntent",
+                    "slots": [
+                        {
+                            "name": "day",
+                            "type": "AMAZON.DayOfWeek"
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "Lieferung {day} {time}",
+                        "Lieferung {time} {day}",
+                        "Liefere {day} um {time}",
+                        "Liefere um {time} am {day}",
+                        "Liefer {day} um {time}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.DayOfWeek",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Heute"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sonntag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Samstag",
+                                "synonyms": [
+                                    "Sonnabend"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Freitag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Donnerstag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mittwoch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dienstag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Montag"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
